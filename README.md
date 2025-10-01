@@ -1,7 +1,7 @@
 # Laravel + React (Vite) — TaskBoard
 
 **Stack**
-- Backend: Laravel 10 (API-only) — configured for **MySQL**
+- Backend: Laravel 12 (API-only) — configured for **MySQL**
 - Frontend: React + Vite + TailwindCSS
 - Auth: Laravel Sanctum (instructions included)
 - Drag & Drop: react-beautiful-dnd

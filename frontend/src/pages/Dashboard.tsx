@@ -104,11 +104,11 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 p-8">
+    <div className="min-h-screen w-screen overflow-x-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 p-8">
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <h2 className="text-4xl font-bold text-gray-800 mb-2">{currentProject.title}</h2>
-          <p className="text-gray-600">Управляйте задачами вашего проекта</p>
+          <p className="text-gray-600">Manage your project tasks</p>
         </div>
 
         <DragDropContext onDragEnd={onDragEnd}>
@@ -117,7 +117,7 @@ export default function Dashboard() {
               <div key={colId} className="flex flex-col">
                 <div className="bg-white rounded-lg shadow-md p-4 mb-4">
                   <h3 className="font-bold text-lg text-gray-800">{col.title}</h3>
-                  <div className="text-sm text-gray-500 mt-1">{col.items.length} задач</div>
+                  <div className="text-sm text-gray-500 mt-1">{col.items.length} Tasks</div>
                 </div>
 
                 <Droppable droppableId={colId}>

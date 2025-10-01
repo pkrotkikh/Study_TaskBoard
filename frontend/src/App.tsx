@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { useContext, ReactNode } from "react";
 
+import Test from "./pages/Test";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Logout from "./pages/Logout";
-import Test from "./pages/Test";
+
 
 
 export default function App() {
