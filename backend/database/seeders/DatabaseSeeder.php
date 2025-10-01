@@ -32,5 +32,21 @@ class DatabaseSeeder extends Seeder
             'status' => 'todo',
             'order' => 1
         ]);
+
+        $task = Task::create([
+            'project_id' => $project->id,
+            'title' => 'Second task',
+            'description' => 'This is a demo',
+            'status' => 'todo',
+            'order' => 2
+        ]);
+
+        $task = Task::create([
+            'project_id' => $project->id,
+            'title' => 'Third task',
+            'description' => 'This is a demo',
+            'status' => 'todo',
+            'order' => 3
+        ]);
     }
 }
